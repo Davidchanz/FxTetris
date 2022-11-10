@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<AnchorPane id="AnchorPane" onKeyPressed="#onKeyPressed" prefHeight="650.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fxtetris.HelloController">
+<children>
+    <HBox>
+        <Canvas fx:id="canvas"/>
+        <VBox>
+            <TableView fx:id="table">
+                <columns>
+                    <TableColumn fx:id="date" text="Date"/>
+                    <TableColumn fx:id="score" text="Score"/>
+                </columns>
+            </TableView>
+            <Button fx:id="button" text="Start" onAction="#onStartClickButton"/>
+        </VBox>
+    </HBox>
+</children>
+</AnchorPane>
